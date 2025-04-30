@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Fale Conosco - LAFA</title>
+  <link rel="stylesheet" href="../css/contato.css" />
+</head>
+<body>
+  <header>
+    <img src="../img/Logo.png" alt="Logo da LAFA" height="100" />
+    <nav>
+      <ul>
+        <li><a href="index.html">Home</a></li>
+        <li><a href="produtos.html">Produtos</a></li>
+        <li><a href="novidades.html">Novidades</a></li>
+        <li><a href="sobre.html">Sobre</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <main>
+    <h1>Fale conosco!</h1>
+    <section class="contato">
+      <p><h4>Tem dúvidas, sugestões ou quer só bater um papo com a gente? Preencha o formulário abaixo e entraremos em contato com você.</h4></p>
+      <form action="confirmacao.html" method="post">
+        <label for="nome"><strong>Nome:</strong></label>
+        <input type="text" id="nome" name="nome" required />
+
+        <label for="email"><strong>E-mail:</strong></label>
+        <input type="email" id="email" name="email" required />
+
+        <label for="mensagem"><strong>Mensagem:</strong></label>
+        <textarea id="mensagem" name="mensagem" rows="5" required></textarea>
+
+        <button type="submit">Enviar</a></button>
+      </form>
+      <div class="redes-sociais">
+        <p>Ou fale com a gente diretamente:</p>
+        <a href="https://www.instagram.com/021lafa/" target="_blank" class="btn-instagram">
+          <i class="fab fa-instagram"></i> Instagram
+        </a>
+      </div>
+    </section>
+  </main>
+  <footer>
+    <p>&copy; 2025 - LAFA. Todos os direitos reservados.</p>
+  </footer>
+</body>
+</html>

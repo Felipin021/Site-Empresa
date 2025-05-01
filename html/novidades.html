@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Página Principal - LAFA</title>
+    <link rel="stylesheet" href="../css/novidades.css">
+</head>
+<body>
+    <header>
+        <img src="../img/Logo.png" height="120">
+        <nav>
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="produtos.html">Produtos</a></li>
+                <li><a href="sobre.html">Sobre</a></li>
+                <li><a href="contato.html">Contato</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+      <h1>Novidades</h1>
+      <p><h2>🚨 DROP EXCLUSIVO LAFA CHEGOU 🚨</h2></p>
+
+      <p><h4>A LAFA apresenta seu novo drop — uma coleção que traduz atitude, identidade e estilo em cada peça. Inspirados pelo ritmo das ruas e a autenticidade de quem faz sua própria história, trazemos roupas que vestem mais do que o corpo: vestem personalidade.</p>
+      <br>
+      <p>Nesta nova coleção, você vai encontrar cortes ousados, tecidos premium e detalhes que fazem a diferença. É sobre ser diferente, é sobre ser você.</h4></p>
+      <br>
+      <p><strong>&#x1F525 Edição limitada</strong></p>
+      <p> <strong>&#x1F4E6 Disponível apenas enquanto durar o estoque</strong></p>
+      <p> <strong>&#x1F4C5 Lançamento:</strong> 01/05/2025</p>
+      <p> <strong>&#x1F310 Disponível em:</strong> Disponível em nosso site e instagram!</p>
+      <br>
+      <p><h4>Não é só roupa. É LAFA.</p>
+      <p>Vista o novo. Vista o agora!</h4></p>
+        <div id="countdown">
+            <div id="timer">
+              <p id="days"></p>
+              <p id="hours"></p>
+              <p id="minutes"></p>
+              <p id="seconds"></p>
+            </div>
+          </div>
+      
+          <script>
+            const targetDate = new Date("May 1, 2025 00:00:00").getTime();
+      
+            const interval = setInterval(function() {
+              const now = new Date().getTime();
+              const timeRemaining = targetDate - now;
+      
+              const days = Math.floor(timeRemaining / (1000 * 60 * 60 * 24));
+              const hours = Math.floor((timeRemaining % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60));
+              const minutes = Math.floor((timeRemaining % (1000 * 60 * 60)) / (1000 * 60));
+              const seconds = Math.floor((timeRemaining % (1000 * 60)) / 1000);
+      
+              document.getElementById("days").innerText = `${days} dias`;
+              document.getElementById("hours").innerText = `${hours} horas`;
+              document.getElementById("minutes").innerText = `${minutes} minutos`;
+              document.getElementById("seconds").innerText = `${seconds} segundos`;
+      
+              if (timeRemaining < 0) {
+                clearInterval(interval);
+                document.getElementById("countdown").innerHTML = "<h2>O tempo acabou!</h2>";
+              }
+            }, 1000);
+          </script>
+    </main>
+
+    <footer>
+        <p>&copy; 2025 - LAFA. Todos os direitos reservados.</p>
+    </footer>
+</body>
+</html>
